@@ -1,9 +1,12 @@
 # WEB-JAVA-7 - Web Applications Build and Deploy
 
 ## Practice Exercise
-Add on to the repository you cloned from  https://github.com/generation-org/spring-boot
+Add on to the repository you cloned from  https://github.com/generation-org/spring-boot.
+
+Now that we have a working databse for users, we want to store and be able to retrieve more information about people.
 The program should take in initials for a person and their age.
 And you should be able to lookup and retrieve the initials and age of a person.
+
 Make sure to write unit tests!
 
 Once you have tested your application, it is time to deploy.
