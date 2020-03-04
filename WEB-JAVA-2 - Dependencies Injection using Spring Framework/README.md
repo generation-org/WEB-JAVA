@@ -7,10 +7,10 @@
  <br/>
  
  
- ## Part 1: Implementing Student Service
+ ## Part 1: Implementing Student Service: ArrayList
  1. Download and import the project inside the [DependenciesInjection folder.](https://github.com/generation-org/WEB-JAVA/tree/master/WEB-JAVA-2%20-%20Dependencies%20Injection%20using%20Spring%20Framework/DependenciesInjection)
 2. Create a new Java class *StudentServiceImpl* that implements the *StudentService* interface.
-3. Implement the methods of the *StudentService* interface:
+3. Implement the methods of the *StudentService* interface using an ArrayList as the internal data structure:
   ```java
    public interface StudentService
     {
@@ -31,3 +31,11 @@
   ```html
     http://localhost:8080/student/10
   ```
+ ## Part 2: Implementing Student Service: HasMap
+1. Create a new Java class *StudentServiceImplMap* that implements the *StudentService* class.
+2. Implement the methods of the *StudentService* interface using a HashMap as the internal data structure:
+3. Move the *@Service* annotation from the *StudentServiceImpl* to the *StudentServiceImplMap*
+4. Run your project and verify that your code is using the map configuration(you can use the debugger or just add a console message with System.our.println("message"))
+
+## Challenge Yourself
+1.Open the *DependenciesInjectionApplicationTests* class and write 3 unit tests for any of the services implementaitons.
