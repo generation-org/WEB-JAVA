@@ -1,9 +1,9 @@
 # WEB-JAVA-7 - Web Applications Build and Deploy
 
 ## Practice Exercise
-Add on to the repository you cloned from  https://github.com/generation-org/spring-boot.
+Deploy the git repo:  https://github.com/generation-org/spring-boot.
 
-Now that we have a working databse for users, we want to store and be able to retrieve more information about people.
+Now that we have a working database for users, we want to store and be able to retrieve more information about people.
 The program should take in initials for a person and their age.
 And you should be able to lookup and retrieve the initials and age of a person.
 
@@ -29,8 +29,9 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/work/app.j
 ```
 heroku login
 heroku container:login
+heroku apps:create ${YOUR_APP_NAME}
 heroku container:push web --app ${YOUR_APP_NAME}
 heroku container:release web --app ${YOUR_APP_NAME}
 ```
 
-Go to the heroku dashboard and go to your hosted site!
+Go to the heroku dashboard and go see your hosted site!
