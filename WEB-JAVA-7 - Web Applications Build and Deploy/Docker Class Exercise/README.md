@@ -20,3 +20,15 @@
 5. Check out your Docker World Application at http://localhost:8080
 
 Congratulations! You’ve just created a Docker container for a Spring Boot app! 
+
+## Deploying your Docker Image to Heroku
+
+1. Make sure you have a Heroku account.
+2. Create your docker image
+3. Deploy on Heroku
+```
+heroku login
+heroku container:login
+heroku container:push web --app ${YOUR_APP_NAME}
+heroku container:release web --app ${YOUR_APP_NAME}
+```
