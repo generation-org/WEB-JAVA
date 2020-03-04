@@ -24,10 +24,10 @@
 
     }
   ```
- 4.Annotate the *StudentServiceImpl* with the *@Service* annotation.
+ 4. Annotate the *StudentServiceImpl* with the *@Service* annotation.
  5. Add a method inside the *StudentServiceImpl* that is called inside the constructors that add some test students.
- 5.Start your server by running the project on the *main* on the *DependenciesInjectionApplication* class.
- 6. Verify that your implementations works by passing an existing id into the url and check that student data is displayed in the browser.
- ```html
-  http://localhost:8080/student/10
-```
+ 6. Start your server by running the project on the *main* on the *DependenciesInjectionApplication* class.
+ 7. Verify that your implementations works by passing an existing id into the url and check that student data is displayed in the browser.
+  ```html
+    http://localhost:8080/student/10
+  ```
