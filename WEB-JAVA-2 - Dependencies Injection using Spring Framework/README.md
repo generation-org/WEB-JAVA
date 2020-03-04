@@ -38,4 +38,4 @@
 4. Run your project and verify that your code is using the map configuration(you can use the debugger or just add a console message with System.our.println("message"))
 
 ## Challenge Yourself
-1.Open the *DependenciesInjectionApplicationTests* class and write 3 unit tests for any of the services implementaitons.
+1. Open the *DependenciesInjectionApplicationTests* class and write 3 unit tests for any of the services implementaitons.
