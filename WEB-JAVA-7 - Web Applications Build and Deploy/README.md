@@ -24,4 +24,13 @@ FROM openjdk:8-jdk-alpine
 COPY --from=builder /work/app.jar /work/app.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/work/app.jar"]
 ```
-2. Deploy on heroku. 
+2. Deploy on heroku using the following commands. Replace `${YOUR_APP_NAME}` with the name of your application.
+
+```
+heroku login
+heroku container:login
+heroku container:push web --app ${YOUR_APP_NAME}
+heroku container:release web --app ${YOUR_APP_NAME}
+```
+
+Go to the heroku dashboard and go to your hosted site!
