@@ -24,7 +24,7 @@ Congratulations! You’ve just created a Docker container for a Spring Boot app!
 
 1. Make sure you have a Heroku account.
 2. Create your docker image from the steps above (Creating your first Docker Image).
-3. Deploy on Heroku: copy and paste each command - one at a time.
+3. Deploy on Heroku. Copy and paste each command - one at a time.
 ```
 heroku login
 heroku container:login
