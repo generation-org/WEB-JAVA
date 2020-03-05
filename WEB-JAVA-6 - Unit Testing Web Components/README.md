@@ -14,7 +14,7 @@
 
 2. Write test cases in a new method called `testSubtract()` that tests the subtract method.
 
-3. Write 3 test cases that verify whether a mock method is being called with reequired arguments.
+3. Write 3 test cases that verify whether a mock method is being called with required arguments,
 i.e. 
 ```
 when(calcService.add(10.0,20.0)).thenReturn(30.00);
