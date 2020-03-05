@@ -5,7 +5,7 @@ Deploy the git repo:  https://github.com/generation-org/spring-boot.
 
 Now that we have a working database for users, we want to store and be able to retrieve more information about people.
 The program should take in initials for a person and their age.
-And you should be able to lookup and retrieve the initials and age of a person.
+You should also be able to lookup and retrieve the initials and age of a person.
 
 Make sure to write unit tests!
 
@@ -34,4 +34,4 @@ heroku container:push web --app ${YOUR_APP_NAME}
 heroku container:release web --app ${YOUR_APP_NAME}
 ```
 
-Go to the heroku dashboard and go see your hosted site!
+Go to the heroku dashboard and see your hosted site!
