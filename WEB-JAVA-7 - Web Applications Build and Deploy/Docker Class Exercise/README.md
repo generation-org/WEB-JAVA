@@ -2,7 +2,7 @@
 
 ## Creating your first Docker Image
 
-### Step 1 
+### Step 1: Hello Docker World 
 1. `git clone https://github.com/spring-guides/gs-spring-boot-docker.git`
 2. Import the project into IntelliJ.
 3. Take the `Application.java` file from this folder and put it into the `src/` in your project.
