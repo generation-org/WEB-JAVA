@@ -9,7 +9,7 @@
 4. In your terminal, go to `gs-spring-boot-docker/complete`. Run from the command line:`./mvnw package && java -jar target/gs-spring-boot-docker-0.1.0.jar`
 5. Go to localhost:8080 to see your "Hello Docker World" message.
 
-### Step 2 Containerize It
+### Step 2: Containerize It
 1. Put the `Dockerfile` in this folder into your application.
 2. Run in the command line `$ mkdir -p build/dependency && (cd build/dependency; jar -xf ../libs/*.jar)`
 3. Create your Docker image.
