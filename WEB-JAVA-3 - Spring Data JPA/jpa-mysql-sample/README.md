@@ -18,7 +18,7 @@
         -- Table `db_example`.`Users`
         -- -----------------------------------------------------
         CREATE TABLE IF NOT EXISTS `db_example`.`Users` (
-          `idUsers` INT NOT NULL,
+          `id` INT NOT NULL,
           `name` VARCHAR(200) NULL,
           `last_name` VARCHAR(200) NULL,
           `email` VARCHAR(200) NULL,
