@@ -6,16 +6,16 @@
 
 2. Open the Local Instance 3306 in the *MySQL Connections*
 
-3. To create a new database, run the following commands at the mysql prompt:
+3. Create a new database running the following commands at MySQL Workbench:
     ```sql
         -- -----------------------------------------------------
-        -- Schema mydb
+        -- Schema db_example
         -- -----------------------------------------------------
         CREATE SCHEMA IF NOT EXISTS `db_example` DEFAULT CHARACTER SET utf8 ;
         USE `db_example` ;
 
         -- -----------------------------------------------------
-        -- Table `mydb`.`Users`
+        -- Table `db_example`.`Users`
         -- -----------------------------------------------------
         CREATE TABLE IF NOT EXISTS `db_example`.`Users` (
           `idUsers` INT NOT NULL,
