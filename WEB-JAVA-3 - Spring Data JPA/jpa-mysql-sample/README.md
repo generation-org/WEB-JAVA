@@ -5,7 +5,7 @@
     ```bash
         sudo mysql --password
     ```
-2. To a new database, run the following commands at the mysql prompt:
+2. To create a new database, run the following commands at the mysql prompt:
    ```bash
         mysql> create database db_example; -- Creates the new database
         mysql> create user 'springuser'@'%' identified by 'ThePassword'; -- Creates the user
