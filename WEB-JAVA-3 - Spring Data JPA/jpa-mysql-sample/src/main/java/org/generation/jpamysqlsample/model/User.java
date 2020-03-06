@@ -1,15 +1,26 @@
 package org.generation.jpamysqlsample.model;
 
+import org.hibernate.annotations.RowId;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity
+
+@Entity(name = "Users")
 public class User
 {
+    @Id
+    @GeneratedValue
+    private String id;
+
     private String name;
 
-    @Id
-    private String id;
+    @Column(name = "last_name")
+    private String lastName;
+
+    private String email;
 
     public User()
     {
