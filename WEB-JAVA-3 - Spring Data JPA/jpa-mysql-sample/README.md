@@ -1,19 +1,36 @@
 # Spring Boot API Sample Project
 
-In order to run this project you need to follow the next steps:
+### Part 1: Creating the local database
 
-1. Install MySQL: https://dev.mysql.com/downloads/installer/
+1. Open MySQL Workbench
 
-2. Connect to MySQL database as Root user:
-    ```bash
+2. Open the Local Instance 3306 in the *MySQL Connections*
 
-      $ sudo mysql --password
-    ```
 3. To create a new database, run the following commands at the mysql prompt:
-    ```bash
-        mysql> create database db_example; -- Creates the new database
-        mysql> create user 'springuser'@'%' identified by 'ThePassword'; -- Creates the user
-        mysql> grant all on db_example.* to 'springuser'@'%'; -- Gives all privileges to the new user on the newly created database      
+    ```sql
+        -- -----------------------------------------------------
+        -- Schema mydb
+        -- -----------------------------------------------------
+        CREATE SCHEMA IF NOT EXISTS `db_example` DEFAULT CHARACTER SET utf8 ;
+        USE `db_example` ;
+
+        -- -----------------------------------------------------
+        -- Table `mydb`.`Users`
+        -- -----------------------------------------------------
+        CREATE TABLE IF NOT EXISTS `db_example`.`Users` (
+          `idUsers` INT NOT NULL,
+          `name` VARCHAR(200) NULL,
+          `last_name` VARCHAR(200) NULL,
+          `email` VARCHAR(200) NULL,
+          PRIMARY KEY (`idUsers`))
+    ```
+4. Insert some Users to the database
+    ```sql
+        INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('1', 'Debbie', 'Ly', 'debbie@generation.org');
+        INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('2', 'Cleon', 'Grant', 'cleon@generation.org');
+        INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('3', 'Carlos', 'Echeverry', 'carlos@generation.org');
+        INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('4', 'Elise', 'Guimarães', 'elise@generation.org');
+        INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('5', 'Ian', 'Munene', 'ian@generation.org');
+        INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('6', 'Santiago', 'Carrillo', 'santiago@generation.org');
     ```
 
-Reference: https://spring.io/guides/gs/accessing-data-mysql/
