@@ -93,5 +93,5 @@
        http://localhost:8080/sales/1
     ```
     
-## Challeng Yourself
+## Challenge Yourself
 1. Create another method into the SalesService and SalesController to retrieve all the products that belong to a given sale ID.
