@@ -35,7 +35,7 @@
 1. Create a new Java class *StudentServiceImplMap* that implements the *StudentService* class.
 2. Implement the methods of the *StudentService* interface using a HashMap as the internal data structure.
 3. Move the *@Service* annotation from the *StudentServiceImpl* to the *StudentServiceImplMap*
-4. Run your project and verify that your code is using the map configuration(you can use the debugger or just add a console message with System.our.println("message"))
+4. Run your project and verify that your code is using the map configuration (you can use the debugger or just add a console message with System.our.println("message")).
 
 ## Challenge Yourself
-1. Open the *DependenciesInjectionApplicationTests* class and write 3 unit tests for any of the services implementations.
+1. Open the *DependenciesInjectionApplicationTests* class and write 3 unit tests for any of the service implementations.
