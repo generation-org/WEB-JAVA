@@ -46,3 +46,14 @@
         INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('6', 'Santiago', 'Carrillo', 'santiago@generation.org');
     ```
 
+### Part 3: Testing your Database connection:
+1. Download the project and import it as a Gradle project into your IDE IntelliJ Idea.
+2. Run the applicaiton class
+3. Test that the connection works by accessing the users data in the browser:
+    ```bash
+        http://localhost:8080/user/1
+    ```
+    Should output:
+     ```json
+        {"id":"1","name":"Debbie"}
+    ```   
