@@ -1,6 +1,18 @@
 # Spring Boot API Sample Project
 
-### Part 1: Creating the local database
+### Part 1: Creating a Database user
+1. Open the terminal and mysql as root user:
+    ```bash
+        sudo mysql --password
+    ```
+2. To a new database, run the following commands at the mysql prompt:
+   ```bash
+        mysql> create database db_example; -- Creates the new database
+        mysql> create user 'springuser'@'%' identified by 'ThePassword'; -- Creates the user
+        mysql> grant all on db_example.* to 'springuser'@'%'; -- Gives all privileges to the new user on the newly created          database
+    ```
+    
+### Part 2: Creating the local database
 
 1. Open MySQL Workbench
 
