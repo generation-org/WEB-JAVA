@@ -58,5 +58,4 @@
 * Delete a Student
 
 ## Challenge Yourself
-1. Create an additional endpoint that lets you find all the students whos name starts whith a given query parameter.
-hint Use the LIKE QUERY Operation
+1. Create an additional endpoint that lets you find all the students whos name starts with a given query parameter.
