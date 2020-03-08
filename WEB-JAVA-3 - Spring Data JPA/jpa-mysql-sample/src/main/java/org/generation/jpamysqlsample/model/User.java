@@ -1,7 +1,5 @@
 package org.generation.jpamysqlsample.model;
 
-import org.hibernate.annotations.RowId;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
