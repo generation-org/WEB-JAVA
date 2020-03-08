@@ -28,6 +28,7 @@
       PRIMARY KEY (`idStudents`))
    ```
 2. Download the project and import it as a Gradle project into your IDE.
+3. Verify the connection properties in the *application.properties* file.
 3. Run the application and verify that the sample data is created from the Web Application.
 
 ## Part 2: Implementing a REST API CRUD
