@@ -8,7 +8,8 @@
  
  
  ## Part 1: Create the Database Table
-   ```sql
+1. Run the following SQL scripts using MySQL Workbench:
+```sql
     -- -----------------------------------------------------
     -- Schema mydb
     -- -----------------------------------------------------
@@ -26,12 +27,14 @@
       `birth_date` DATETIME NULL,
       PRIMARY KEY (`idStudents`))
    ```
+2. Download the project and import it as a Gradle project into your IDE.
+3. Run the application and verify that the sample data is created from the Web Application.
+
 ## Part 2: Implementing a REST API CRUD
-1. Download the project and import it as a Gradle project into your IDE.
-2. Create a new packaged called *controller*
-3. Create a new class called *StudentsController*
-4. Annotate the *StudentsController* with the *@RestController*
-5. Inject the *StudentService* into the *StudentsController* via the constructor:
+1. Create a new packaged called *controller*
+2. Create a new class called *StudentsController*
+3. Annotate the *StudentsController* with the *@RestController*
+4. Inject the *StudentService* into the *StudentsController* via the constructor:
     ```java
     private StudentService studentService;
 
@@ -40,7 +43,7 @@
         StudentsApplication.studentService = studentService;
     }
     ``` 
-6. Define an enpoint for each of the CRUD methods as follows:
+5. Define an enpoint for each of the CRUD methods as follows:
   
    | Method Name                          | HTTP Method | Endpoint Path |
    |--------------------------------------|-------------|---------------|
@@ -50,7 +53,7 @@
    | update(@RequestBody Student student) | PUT         | /student      |
    | delete(@PathVariable String id)      | DELETE      | /student/{id} |
 
-7. Use Postman to test your REST API. Verify each of the CRUD operations:
+6. Use Postman to test your REST API. Verify each of the CRUD operations:
 * Create a new Student
 * Find a Student by ID
 * Get All the Students List
