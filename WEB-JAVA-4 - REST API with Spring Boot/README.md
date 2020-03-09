@@ -32,7 +32,7 @@
 3. Run the application and verify that the sample data is created from the Web Application.
 
 ## Part 2: Implementing a REST API CRUD
-1. Create a new packaged called *controller*.
+1. Create a new package called *controller*.
 2. Create a new class called *StudentsController*.
 3. Annotate the *StudentsController* with the *@RestController*.
 4. Inject the *StudentService* into the *StudentsController* via the constructor:
