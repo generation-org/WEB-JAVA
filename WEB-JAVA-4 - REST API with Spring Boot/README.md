@@ -32,9 +32,9 @@
 3. Run the application and verify that the sample data is created from the Web Application.
 
 ## Part 2: Implementing a REST API CRUD
-1. Create a new packaged called *controller*
-2. Create a new class called *StudentsController*
-3. Annotate the *StudentsController* with the *@RestController*
+1. Create a new packaged called *controller*.
+2. Create a new class called *StudentsController*.
+3. Annotate the *StudentsController* with the *@RestController*.
 4. Inject the *StudentService* into the *StudentsController* via the constructor:
     ```java
     private StudentService studentService;
@@ -44,7 +44,7 @@
         StudentsApplication.studentService = studentService;
     }
     ``` 
-5. Define an enpoint for each of the CRUD methods as follows:
+5. Define an endpoint for each of the CRUD methods as follows:
   
    | Method Name                          | HTTP Method | Endpoint Path |
    |--------------------------------------|-------------|---------------|
@@ -62,4 +62,4 @@
 * Delete a Student
 
 ## Challenge Yourself
-1. Create an additional endpoint that lets you find all the students whos name starts with a given query parameter.
+1. Create an additional endpoint that lets you find all the students whose name starts with a given query parameter.
