@@ -46,14 +46,14 @@
    }   
    ```
 3. Create an implementation of the *StudentService* interface and annotate it with *@Service*.
-4. Create a new controller inside the controller package called *StudentController*
-5. Inject the *StudentService* inside the *StudentController* via de constructor
+4. Create a new controller inside the controller package called *StudentController*.
+5. Inject the *StudentService* inside the *StudentController* via de constructor.
 6. Implement the endpoints to handle each request to fulfill the services defined on the *StudentService* interface.
 7. Make sure your endpoints start with "/api" so they can be secured by the JWT Filter interceptor.
 8. Test your API using Postman.
 
 ## Challenge Yourself
-Implement and additional endpoing method and service to enroll a student into a course.
+Implement an additional endpoint method and service to enroll a student into a course.
 
 
 
