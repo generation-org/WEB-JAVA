@@ -24,6 +24,8 @@
 
      }
   ```
+ 3. Test your Controller using Postma(Do not forget to generate a token and add it to the request as Authorization header)
+ 
  ## Part 2: Implementing Students Sercure API
 1. Create a new model called *Student* inside the model package wiht the following information:
   * Id
