@@ -14,9 +14,9 @@
     
 ### Part 2: Creating the local database
 
-1. Open MySQL Workbench
+1. Open MySQL Workbench.
 
-2. Open the Local Instance 3306 in the *MySQL Connections*
+2. Open the Local Instance 3306 in the *MySQL Connections*.
 
 3. Create a new database running the following commands at MySQL Workbench:
     ```sql
@@ -36,7 +36,7 @@
           `email` VARCHAR(200) NULL,
           PRIMARY KEY (`idUsers`))
     ```
-4. Insert some Users to the database
+4. Insert some Users to the database:
     ```sql
         INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('1', 'Debbie', 'Ly', 'debbie@generation.org');
         INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('2', 'Cleon', 'Grant', 'cleon@generation.org');
@@ -46,9 +46,9 @@
         INSERT INTO `db_example`.`Users` (`idUsers`, `name`, `last_name`, `email`) VALUES ('6', 'Santiago', 'Carrillo', 'santiago@generation.org');
     ```
 
-### Part 3: Testing your Database connection:
+### Part 3: Testing your Database connection
 1. Download the project and import it as a Gradle project into your IDE IntelliJ Idea.
-2. Run the applicaiton class
+2. Run the application class.
 3. Test that the connection works by accessing the users data in the browser:
     ```bash
         http://localhost:8080/user/1
