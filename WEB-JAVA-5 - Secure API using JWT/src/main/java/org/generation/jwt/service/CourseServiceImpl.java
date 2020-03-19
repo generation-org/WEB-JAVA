@@ -63,9 +63,9 @@ public class CourseServiceImpl
     }
 
     @Override
-    public void save( Course course )
+    public Course save( Course course )
     {
-        courseList.put( course.getId(), course );
+        return courseList.put( course.getId(), course );
     }
 
     @Override
