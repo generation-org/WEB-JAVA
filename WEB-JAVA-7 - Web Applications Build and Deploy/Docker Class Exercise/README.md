@@ -16,7 +16,7 @@
 `$ docker build --build-arg DEPENDENCY=build/dependency -t springio/gs-spring-boot-docker .`
 4. Run on docker!
 `docker run -p 8080:8080 -t springio/gs-spring-boot-docker`
-5. Check out your Docker World Application at http://localhost:8080
+5. Check out your Docker World Application at http://localhost:8080.
 
 Congratulations! You’ve just created a Docker container for a Spring Boot app! 
 
