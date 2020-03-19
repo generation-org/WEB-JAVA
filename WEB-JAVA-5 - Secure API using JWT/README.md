@@ -28,9 +28,9 @@
  
  ## Part 2: Implementing Students Sercure API
 1. Create a new model called *Student* inside the model package wiht the following information:
-  * Id
-  * Name
-  * Email
+   * Id
+   * Name
+   * Email
 
 2. Define a new interface inside the service package called *StudentService* with the following methods:
    ```java   
